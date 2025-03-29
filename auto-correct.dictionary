@@ -1,0 +1,55 @@
+ "auto-correct.dictionary": [
+    {
+      "languages": ["*"],
+      "words": {
+        "hte": "the",
+        "mispell": "misspell",
+        "mispelled": "misspelled",
+        "{despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or}": "{despe,sepa}rat{}"
+      },
+      "useLargeList": false
+    },
+    {
+      "languages": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+      ],
+      "words": {
+        "cosnt": "const",
+        "functoin": "function"
+      }
+    }
+  ]
+
+"languages": ["*"]: this is the global dictionary, it'll work on every language type
+useLargeList: set to true to use some default key pairs
+A feature from vim'sa vim-abolish plugin
+
+"words": {
+  ...
+  "{despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or}": "{despe,sepa}rat{}"
+}
+
+This will be automatically converted to the following
+
+"words": {
+  ...
+  "desparate": "desperate",
+  "desparates": "desperates",
+  "desparated": "desperated",
+  "desparating": "desperating",
+  "desparately": "desperately",
+  "desparation": "desperation",
+  "desparations": "desperations",
+  "desparator": "desperator",
+  "seperate": "separate",
+  "seperates": "separates",
+  "seperated": "separated",
+  "seperating": "separating",
+  "seperately": "separately",
+  "seperation": "separation",
+  "seperations": "separations",
+  "seperator": "separator"
+}
