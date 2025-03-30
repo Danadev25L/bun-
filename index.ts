@@ -9,13 +9,15 @@ import { todoRoutes } from "./routes/Routes";
 dotenv.config();
 
 const app = new Elysia();
-
-
 app.use(cors());
-
-// Register routes
 app.use(todoRoutes);
-app.listen(3000);
 
-console.log("✅ Server running at http://localhost:3000");
+// Get dynamic port from Railway (or default to 3000 for local dev)
+const port = Number(process.env.PORT) || 3000;
 
+if (isNaN(port) || port < 0 || port > 65535) {
+  throw new Error("❌ Invalid PORT: must be between 0 and 65535");
+}
+
+app.listen(port);
+console.log(`✅ Server running at http://localhost:${port}`);
