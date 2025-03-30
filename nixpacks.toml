@@ -1,6 +1,6 @@
 [phases.setup]
-# Bun 1.0.29
-nixpkgsArchive = 'f3c285ca44fa6bbf184c122f38857ac0ff2f3b7a'
+# Bun 1.0.18 – stable and works with Railway
+nixpkgsArchive = '9c69bc8cae2f3b38536a50801961e2e62da13595'
 
 [start]
 cmd = "bun run start"
