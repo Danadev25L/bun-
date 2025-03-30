@@ -1,5 +1,8 @@
-# dependencies (bun install)
-node_modules
+# Ignore all node_modules
+node_modules/
+
+# EXCEPT the Prisma client engine
+!node_modules/.prisma
 
 # output
 out
@@ -32,3 +35,4 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+node_modules
