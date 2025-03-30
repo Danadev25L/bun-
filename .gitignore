@@ -1,3 +1,29 @@
+# Ignore everything in node_modules
+node_modules/
+
+# Except the Prisma engine
+!node_modules/.prisma
+# Ignore the Prisma schema
+!node_modules/.prisma/schema.prisma
+# Ignore the Prisma client
+!node_modules/.prisma/client
+# Ignore the Prisma migrations
+!node_modules/.prisma/migrations
+# Ignore the Prisma seed
+!node_modules/.prisma/seed
+# Ignore the Prisma studio
+!node_modules/.prisma/studio
+# Ignore the Prisma data
+!node_modules/.prisma/data
+# Ignore the Prisma db push
+!node_modules/.prisma/db-push
+# Ignore the Prisma db pull
+!node_modules/.prisma/db-pull
+# Ignore the Prisma db seed
+!node_modules/.prisma/db-seed
+# Ignore the Prisma db reset
+!node_modules/.prisma/db-reset
+
 
 # output
 out
