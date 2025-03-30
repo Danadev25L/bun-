@@ -11,9 +11,11 @@
   "dependencies": {
     "@elysiajs/cors": "^1.2.0",
     "@prisma/client": "^6.5.0",
+    "add": "^2.0.6",
     "backend": "file:",
     "dotenv": "^16.4.7",
-    "elysia": "^1.2.25"
+    "elysia": "^1.2.25",
+    "git": "^0.1.5"
   },
   "devDependencies": {
     "@types/bun": "latest",
